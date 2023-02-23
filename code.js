@@ -1,8 +1,10 @@
-// helloWorld function 
-function helloWorld() {
-    return "Hello, World!";
+// helloWorld function
+function helloWorld(input) {
+    if (input === undefined || input === true || input === false) {
+        return "Hello, World!";
+    } else {
+        return "Hello, ${input}!";
+    }
 }
 
-// const helloWorld = () => {
-//     return `Hello, World!`;
-// }
+console.log(helloWorld(true))
