@@ -27,7 +27,22 @@ describe('helloWorld', function() {
     it('should return true when passed with the Boolean true', function () {
         expect(helloWorld(true)).toBe("Hello, World!")
     });
-    it('should return true when passed with the Boolean true', function () {
+    it('should return true when passed with the Boolean false', function () {
         expect(helloWorld(false)).toBe("Hello, World!")
+    });
+});
+
+describe('isFive', function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe(`function`);
+    });
+    it('should return a boolean regardless of the input', function () {
+        expect(isFive(5)).toBeTruthy();
+    });
+    it('should return a boolean regardless of the input', function () {
+        expect(isFive(!5)).toBeFalsy();
+    });
+    it('should be only a numeric input', function () {
+        expect(isFive("5")).toBe(false);
     });
 });
