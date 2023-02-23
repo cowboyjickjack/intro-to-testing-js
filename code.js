@@ -15,4 +15,12 @@ const isFive = input => {
     }
 }
 
-console.log(isFive());
+const isVowel = input => {
+    if (input === 'a' || input === `e` || input === 'i' || input === `o` || input === 'u' || input === 'A' || input === `E` || input === 'I' || input === `O` || input === 'U') {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isVowel('A'))
